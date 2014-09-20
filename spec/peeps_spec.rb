@@ -13,7 +13,7 @@ describe Peeps do
 			peep.destroy
 			expect(Peeps.count).to eq(0)
 		end
-
+		
 	end
 
 end

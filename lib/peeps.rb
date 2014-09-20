@@ -6,7 +6,5 @@ class Peeps
 
 	property :id, 			Serial
 	property :peep, 		String
-	# property :username, 	String
-	# property :userhandle, 	String
 
 end

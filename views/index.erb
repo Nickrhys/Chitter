@@ -1,0 +1,10 @@
+<h1>Welcome to Chitter</h1>
+<h2>It's like Twitter, only shitter</h2>
+
+Latest Peeps: 
+
+<ul>
+	<% @peeps.each do |peep| %>
+		<li><%= peep.text %></li>
+	<% end %>
+</ul>	
