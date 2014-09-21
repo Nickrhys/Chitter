@@ -3,7 +3,7 @@ require 'spec_helper'
 feature "User sees peeps" do
 	
 	before(:each) {
-		Peep.create(:peep => "Hello World!")
+		Peeps.create(:peep => "Hello World!")
 			}
 
 	scenario "when opening the homepage" do

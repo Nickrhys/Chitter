@@ -1,2 +1,3 @@
 require './chitter.rb'
-run chitter
+
+run Sinatra::Application
