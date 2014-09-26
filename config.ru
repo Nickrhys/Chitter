@@ -1,3 +1,3 @@
-require './chitter.rb'
+require './server.rb'
 
 run Sinatra::Application
