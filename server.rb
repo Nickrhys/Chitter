@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'data_mapper'
+require 'rack-flash'
 
 env = ENV["RACK_ENV"] || "development"
 DataMapper.setup(:default, "postgres://localhost/chitter_#{env}")
@@ -10,6 +11,8 @@ require_relative 'application'
 
 enable :sessions
 set :session_supersecret, 'my unique encription key!'
+use Rack::Flash
+use Rack::MethodOverride
 
 DataMapper.finalize
 
@@ -31,9 +34,35 @@ get '/users/new' do
 end
 
 post '/users' do 
-	User.create(:email => params[:email],
+	user = User.create(:email => params[:email],
 				:password => params[:password], 
+				:password_confirmation => params[:password_confirmation],
 				:username => params[:username],
 				:name => params[:name])
+	session[:user_id] = user.id
 	redirect to('/')
+end
+
+get '/sessions/new' do 
+	erb :"sessions/new"
+end
+
+post'/sessions' do
+
+
+	email, password = params[:email], params[:password]
+	user = User.authenticate(email, password)
+	if user
+		session[:user_id] = user.id 
+		redirect to('/')
+	else
+		flash[:errors] = ["The email or password is incorrect"]
+		erb :"sessions/new"
+	end
+end
+
+delete '/sessions' do 
+	flash[:notice] = "Good bye!"
+	session[:user_id] = nil
+	redirect to ('/')
 end
