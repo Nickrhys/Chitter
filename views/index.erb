@@ -9,8 +9,10 @@ Latest Peeps:
 </ul>	
 
 <div id="new-peep">
+	 <% if current_user %>
 	<form action="/peeps" method="post">
 		Peep here: <input type="text" name="peep">
 		<input type="submit" value="add peep">
 	</form>
+	<%end%>
 </div>
