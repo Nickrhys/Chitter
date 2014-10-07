@@ -19,13 +19,14 @@ DataMapper.finalize
 DataMapper.auto_upgrade! 
 
 get'/' do
+
 	@peeps = Peeps.all
+	@session = session[:user_id]
 	erb :index
 end
 
 post '/peeps' do
-	peep = params["peep"]
-	Peeps.create(:peep => peep)
+	Peeps.with(params['peep'], current_user)
 	redirect to ('/')
 end
 
