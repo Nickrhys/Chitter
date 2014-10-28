@@ -1,10 +1,14 @@
 <header>
-  <title>Chitter</title>
-  <% if current_user %>
-  Welcome, <%=current_user.name %>
-  <form method="post" action="/sessions">
-    <input type="hidden" name="_method" value="delete">
-    <input type="submit" value="Sign Out">
-  </form>
-  <% end %>
-    </header>
+  <div id="logo">Chitter</div>
+  <div id="user-peeps">
+    <% if current_user %>
+    <span id="welcome-message">
+      Welcome, <%=current_user.name %>
+    </span>
+    <form method="post" action="/sessions">
+      <input type="hidden" name="_method" value="delete">
+      <input type="submit" value="Sign Out">
+      <% end %>
+    </form>
+  </div>
+</header>
