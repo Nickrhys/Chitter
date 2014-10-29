@@ -1,27 +1,26 @@
 body {
   font: 400 16px/1.6 'Arimo', Verdana, Helvetica, sans-serif;
+  background-color: #B0FDF5;
 }
 
 a.button {
   display: inline-block;
-background-color: #000066;
-border: 2px solid white;
-color: white;
-text-decoration: none;
-padding: 0px 4px 0px 0px;
-text-align: center;
-border-radius: 4px;
-margin-left: 15px;
-margin-right: 10px;
-text-shadow: 0 0 2px rgba(0,0,0, 0.4);
-font-family: 'Pacifico', cursive;
-
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 0px 4px 0px 0px;
+  text-align: center;
+  color: #B0FDF5;
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-right: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  font-family: 'Pacifico', cursive;
 }
 
 header {
   height: 40px;
   background-color: #000066;
-  color: white;
+  color: #B0FDF5;
   display: flex;
   padding: 0 20px;
 }
