@@ -3,24 +3,12 @@ body {
   background-color: #B0FDF5;
 }
 
-a.button {
-  display: inline-block;
-  border: 2px solid white;
-  text-decoration: none;
-  padding: 0px 4px 0px 0px;
-  text-align: center;
-  color: #B0FDF5;
-  border-radius: 4px;
-  margin-left: 15px;
-  margin-right: 10px;
-  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
-  font-family: 'Pacifico', cursive;
-}
 
 header {
   height: 40px;
   background-color: #000066;
   color: #B0FDF5;
+  text-decoration: none;
   display: flex;
   padding: 0 20px;
 }
@@ -40,3 +28,22 @@ header #user-peeps {
   text-align: right;
 }
 
+a.button {
+  display: inline-block;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 0px 4px 0px 0px;
+  text-align: center;
+  color: #B0FDF5;
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-right: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  font-family: 'Pacifico', cursive;
+}
+
+a.button.highlighted {
+  background-color: #B0FDF5;
+  color: #000066;
+  margin-left: 40px; 
+}
