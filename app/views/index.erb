@@ -1,10 +1,13 @@
-<h1>Welcome to Chitter</h1>
-
 <h2>Latest Peeps:</h2> 
 
-<ul>
-	<% @peeps.reverse.each do |peeps| %>
-		<li><%= "#{peeps.peep} - #{peeps.user.username}" %></li>
-	<% end %>
-</ul>	
+<div class="peeps-container">
+  <ul>
+    <% @peeps.reverse.each do |peeps| %>
+    <section class="peeps"
+      <li class="peep"><%= peeps.peep %></li>
+      <li class="name"><%= peeps.user.username %></li>
+    </section>
+    <% end %>
+  </ul>
+</div>  
 

@@ -1,8 +1,12 @@
 body {
   font: 400 16px/1.6 'Arimo', Verdana, Helvetica, sans-serif;
   background-color: #B0FDF5;
+  color: #000066;
 }
 
+h2 {
+padding: 20px 0px 0px 15px;
+}
 
 header {
   height: 40px;
@@ -20,6 +24,11 @@ header > * {
 header #logo {
   display: flex;
   font-family: 'Pacifico', cursive;
+}
+
+header a {
+  color: #B0FDF5;
+  text-decoration: none;
 }
 
 header #user-peeps {
@@ -46,4 +55,28 @@ a.button.highlighted {
   background-color: #B0FDF5;
   color: #000066;
   margin-left: 40px; 
+}
+
+.peeps-container {
+  background-color: #B0FDF5;
+  margin: 85px;
+  margin-top: -20px;
+  border-radius
+}
+
+.peeps{
+  margin: 10px inherit;
+  background-color: #000066;
+  color: #B0FDF5;
+  margin: 40px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.name {
+  float: right;
+  font-size: 15px;
+  margin-top: -24px;
+  color: white;
+  font-family: 'Pacifico', cursive;
 }
