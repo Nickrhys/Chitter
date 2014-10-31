@@ -51,16 +51,40 @@ a.button {
   font-family: 'Pacifico', cursive;
 }
 
-a.button.highlighted {
+form {
+ margin-left: 15px;
+
+}
+
+#peep-here {
+  display: inline-block;
+  border: 2px solid white;
+  text-decoration: none;
+  padding: 5px 100px 0px 0px;
+  border-radius: 4px;
+  border: 2px solid #000066;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+#button-highlighted {
+  display: inline-block;
   background-color: #B0FDF5;
   color: #000066;
-  margin-left: 40px; 
+  border: 2px solid #000066;
+  text-decoration: none;
+  padding: 0px 4px 0px 0px;
+  text-align: center;
+  border-radius: 4px;
+  margin-left: 15px;
+  margin-right: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  font-family: 'Pacifico', cursive;
 }
 
 .peeps-container {
   background-color: #B0FDF5;
   margin: 85px;
-  margin-top: -20px;
   border-radius
 }
 
