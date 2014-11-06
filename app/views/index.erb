@@ -1,19 +1,12 @@
-
 <div id="new-peep">
   <% if current_user %>
-    <form action="/peeps" method="post">
+    <form id="peeps" action="/peeps" method="post">
       Peep here: <input id="peep-here" type="text" name="peep">
       <input id="button-highlighted" type="submit" value="add peep"> 
     </form>
-  <% else %>
-    <form method="get" action="/sessions/new">
-<input type="submit" value="Sign In">
-    </form> 
-      <form method="get" action="/users/new">
-      <input type="submit" value="Sign Up">
-    </form> 
   <%end%>
-</div>
+  <% else %>
+
 
 <h2>Latest Peeps:</h2> 
 
@@ -26,5 +19,5 @@
     </section>
     <% end %>
   </ul>
-</div>  
-
+</div>
+</div> 

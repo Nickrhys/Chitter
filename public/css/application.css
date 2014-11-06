@@ -1,11 +1,12 @@
 body {
   font: 400 16px/1.6 'Arimo', Verdana, Helvetica, sans-serif;
-  background-color: #B0FDF5;
+  background-color: #EDFFFD;
   color: #000066;
 }
 
 h2 {
-padding: 20px 0px 0px 15px;
+padding: 20px 0px 20px 0px;
+margin: 0px 50px 0px
 }
 
 header {
@@ -51,16 +52,41 @@ a.button {
   font-family: 'Pacifico', cursive;
 }
 
-form {
- margin-left: 15px;
+#welcome-message {
+  display: inline-block;
+  float: right;
+  margin-right: 100px;
+  margin-top: 4px;
 
+ } 
+
+#sign-out {
+  display: inline-block;
+  float: right;
+  margin-right: -225px;
+  background-color: #B0FDF5;
+  color: #000066;
+  border: 0px solid #000066;
+  text-decoration: none;
+  padding: 0px 20px 4px 20px;
+  text-align: center;
+  border-radius: 4px;
+  text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+  font-family: 'Pacifico', cursive;
+  font-size: 15px;
+}
+
+#peeps {
+  margin: 15px 0px 0px 0px;
+  margin: 25px;
+  text-align: center;
 }
 
 #peep-here {
   display: inline-block;
   border: 2px solid white;
   text-decoration: none;
-  padding: 5px 100px 0px 0px;
+  padding: 8px 50px 8px 0px;  
   border-radius: 4px;
   border: 2px solid #000066;
   margin-left: 15px;
@@ -73,34 +99,41 @@ form {
   color: #000066;
   border: 2px solid #000066;
   text-decoration: none;
-  padding: 0px 4px 0px 0px;
+  padding: 0px 20px 4px 20px;
   text-align: center;
   border-radius: 4px;
-  margin-left: 15px;
-  margin-right: 10px;
   text-shadow: 0 0 2px rgba(0,0,0, 0.4);
   font-family: 'Pacifico', cursive;
+  font-size: 15px;
+}
+
+div.peeps-container {
+  margin-top: 0px;
 }
 
 .peeps-container {
-  background-color: #B0FDF5;
-  margin: 85px;
-  border-radius
+  background-color: #EDFFFD;
+  border: 2px solid #000066;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 3px; 
 }
 
 .peeps{
-  margin: 10px inherit;
   background-color: #000066;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
   color: #B0FDF5;
-  margin: 40px;
+  height: 20px;
   padding: 10px;
-  border-radius: 5px;
+  border-bottom: 1px solid  #B0FDF5;
 }
 
 .name {
   float: right;
   font-size: 15px;
-  margin-top: -24px;
+  margin-top: 0px;
   color: white;
   font-family: 'Pacifico', cursive;
 }
