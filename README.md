@@ -8,3 +8,4 @@ Features:
 - You can log out
 - You can post messages to chitter when logged in
 - You can see messages from other people, whether you are logged in or not
+
