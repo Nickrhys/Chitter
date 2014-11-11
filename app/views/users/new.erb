@@ -1,10 +1,12 @@
-<h1>Please sign up</h1>
+<h3>Please sign up</h3>
 
-<form action="/users" method="post">
-	Email: <input name="email" type="text" value="<%= @user.email %>">
-	Password: <input name="password" type="password">
-	And Again: <input name="password_confirmation" type="password">
-	Username: <input name="username" type="text">
-	Name: <input name="name" type="text">
-	<input type="submit" value="Sign up">
-</form
+<div class="sign">
+  <form action="/users" method="post">
+  	Email: <input id="sign-form" name="email" type="text" value="<%= @user.email %>">
+  	Password: <input id="sign-form" name="password" type="password">
+  	And Again: <input id="sign-form" name="password_confirmation" type="password"><br>
+  	Username: <input id="sign-form" name="username" type="text">
+  	Name: <input id="sign-form" name="name" type="text">
+  	<input id="sign-button" type="submit" value="Sign up">
+  </form>
+</div>
