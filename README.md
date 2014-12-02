@@ -1,6 +1,6 @@
 Chitter
 =======
-Chitter is a little Twitter clone that allows users to post messages to a public stream. 
+Chitter is a little Twitter clone that allows users to post messages to a public stream, created using Ruby/Sinatra and tested in Rspec. 
 
 Features:
 - You can sign up to the service
