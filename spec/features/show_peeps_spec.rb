@@ -12,6 +12,6 @@ feature "User sees peeps" do
 
 	scenario "when opening the homepage" do
 		visit'/'
-		expect(page).to have_content("Hello World! - AliceR")
+		expect(page).to have_content("Hello World! AliceR")
 	end
 end
