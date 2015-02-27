@@ -1,21 +1,20 @@
 <body>
-<div id="new-peep">
-  <% if current_user %>
-    <form id="peeps" action="/peeps" method="post">
-      Peep here: <input id="peep-here" type="text" name="peep">
-      <input id="button-highlighted" type="submit" value="add peep"> 
-    </form>
-  <%end%>
-  <% else %>
-  <ul>
-    <% @peeps.reverse.each do |peeps| %>
-    <section class="peeps"
-      <li class="peep"><%= peeps.peep %></li>
-      <li class="name"><%= peeps.user.username %></li>
-    </section>
-    <% end %>
-  </ul>
-</div> 
-<div class="push"></div>
+  <div id="new-peep">
+    <% if current_user %>
+      <form id="peeps" action="/peeps" method="post">
+        Peep here: <input id="peep-here" type="text" name="peep">
+        <input id="button-highlighted" type="submit" value="add peep"> 
+      </form>
+    <%end%>
+    <% else %>
+    <ul>
+      <% @peeps.reverse.each do |peeps| %>
+      <section class="peeps"
+        <li class="peep"><%= peeps.peep %></li>
+        <li class="name"><%= peeps.user.username %></li>
+      </section>
+      <% end %>
+    </ul>
+  </div> 
+  <div class="push"></div>
 </body>
-

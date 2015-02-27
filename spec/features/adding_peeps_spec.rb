@@ -4,7 +4,6 @@ feature "user adds a new peep" do
 	
 	scenario "when browsing the homepage" do 
 		
-
 		User.create(:email =>  "test@test.com",
 					:password => 'test',
 					:password_confirmation => 'test',
